@@ -39,9 +39,9 @@
 				echo '<h3>' . $lang['preview'] . '</h3>
 				<img src="sign.php?srv=' . $serverip . '" />
 				<h3>' . $lang['htmlcode'] . '</h3>
-				<input type="text" size=96 value="<a href=&quot;samp://' . $serverip . '&quot;><img src=&quot;sign.php?srv=' . $serverip . '&quot; /></a>" />
+				<input type="text" size=96 value="<a href=&quot;samp://' . $serverip . '&quot;><img src=&quot;http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['REQUEST_URI'], 0, -8) . 'sign.php?srv=' . $serverip . '&quot; /></a>" />
 				<h3>' . $lang['bbcode'] . '</h3>
-				<input type="text" size=96 value="[url=samp://' . $serverip . '][img]sign.php?srv=' . $serverip . '[/img][/url]" />
+				<input type="text" size=96 value="[url=samp://' . $serverip . '][img]http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['REQUEST_URI'], 0, -8) . 'sign.php?srv=' . $serverip . '[/img][/url]" />
 				<br /><br />';
 			}	
 			echo '<h3>' . $lang['generatesign'] . '</h3>

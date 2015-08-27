@@ -1,3 +1,5 @@
+NOTE: This project is old and not maintained anymore. 
+
 RSign - SA-MP Server Signatures
 
 # ABOUT
